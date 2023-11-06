@@ -1,0 +1,51 @@
+.bgOptimize {
+    background-image: url('../src/Images/bgOptimize.jpg');
+    background-size: cover;
+}
+
+.bgForm {
+    background-image: url('../src/Images/bgForm.jpg');
+    background-size: cover;
+}
+
+.placeholder::placeholder {
+    color: white;
+}
+
+.placeholder {
+    border-bottom: 1px solid gray;
+}
+
+.bgMeezan {
+    background-image: url('/src/Images/meezan.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.bgtransFast {
+    background-image: url('/src/Images/transFast.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%);
+}
+
+.bgxPress {
+    background-image: url('/src/Images/xPress.png');
+    background-repeat: no-repeat;
+    padding: 0px;
+    background-position: center;
+    filter: grayscale(100%);
+    background-size: contain;
+}
+
+.bgMeezan:hover,
+.bgtransFast:hover,
+.bgxPress:hover {
+    filter: grayscale(0);
+}
+
+.wave {
+    background-image: url('../src/Images/wave.png');
+    background-size: cover;
+}

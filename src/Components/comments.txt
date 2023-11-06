@@ -1,0 +1,117 @@
+import React from "react";
+import bgIndex from '../Images/bgIndex.jpg'
+import bgIndex1 from '../Images/bgIndex1.jpg'
+
+const Carousel = ({ images, texts }) => {
+    const [activeIndex, setActiveIndex] = React.useState(0);
+
+    const handlePrev = () => {
+        setActiveIndex((prevIndex) => {
+            if (prevIndex === 0) {
+                return images.length - 1;
+            }
+            return prevIndex - 1;
+        });
+    };
+
+    const handleNext = () => {
+        setActiveIndex((prevIndex) => {
+            if (prevIndex === images.length - 1) {
+                return 0;
+            }
+            return prevIndex + 1;
+        });
+    };
+
+    return (
+        <div className="flex flex-col items-center">
+            <div className="relative h-[650px] w-full">
+                <img
+                    src={images[activeIndex]}
+                    alt={`Image ${activeIndex + 1}`}
+                    className="absolute top-0 left-0 h-full w-full object-cover"
+                />
+                <button
+                    type="button"
+                    className="absolute top-0 left-0 h-full w-16 flex justify-center items-center"
+                    onClick={handlePrev}
+                >
+                    <i className="fas fa-chevron-left text-white"></i>
+                </button>
+                <button
+                    type="button"
+                    className="absolute top-0 right-0 h-full w-16 flex justify-center items-center"
+                    onClick={handleNext}
+                >
+                    <i className="fas fa-chevron-right w-[500px] text-white"></i>
+                </button>
+                <div className="absolute left-10 right-10  h-[650px] bg-opacity-[0.1] flex justify-center items-center text-white bg-black">
+                    {texts[activeIndex]}
+                </div>
+            </div>
+            <div className="flex flex-row justify-center gap-2 mt-4">
+                {images.map((image, index) => (
+                    <button
+                        key={index}
+                        type="button"
+                        className={`rounded-full h-6 w-6 bg-white ${activeIndex === index ? "bg-black" : ""
+                            }`}
+                        onClick={() => setActiveIndex(index)}
+                    ></button>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+const MyCarousel = () => {
+    const images = [
+        bgIndex1,
+        bgIndex
+    ];
+    const texts = [
+        "bgIndex",
+        'bgIndex1'
+    ];
+
+    return (
+        <div className="mt-[112px]">
+            <Carousel images={images} texts={texts} />
+        </div>
+    );
+}
+
+export default MyCarousel;
+
+
+
+"scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.0.18",
+    "bootstrap": "^5.3.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.18.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.4.5"
+  }
+
+
+  md:mt-0 md:p-0 md:w-[300px] md:h-[300px] md:inline-flex 
