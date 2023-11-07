@@ -28,7 +28,7 @@ const Carousel = ({ images, texts }) => {
 
     return (
         <div className="flex flex-col items-center">
-            <div className="relative lg:h-[640px] h-[400px] w-full">
+            <div className="relative lg:h-[640px] sm:h-[400px] h-[300px] w-full">
                 <img
                     src={images[activeIndex]}
                     alt={`Image ${activeIndex + 1}`}
@@ -73,15 +73,15 @@ const MyCarousel = () => {
         bgIndex
     ];
     const texts = [
-        <div className="w-full ">
-            <div className="flex py-2 px-4 bg-red-200">
-                <div className="md:flex md:flex-col justify-center w-[700px] bg-green-200">
-                    <h1 className="lg:text-4xl md:text-3xl text-xl font-bold   tracking-wider">Our goal is to make 3D animation accessible to everyone. </h1>
-                    <button className="mt-9 text-xl w-44 bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded text-left">Read More<i className="px-2 fas fa-long-arrow-alt-right"></i></button>
+        <div className="w-full">
+            <div className="flex py-2 px-4 ">
+                <div className="flex flex-col justify-center md:place-items-start place-items-center w-[700px]  md:h-auto h-[280px] ">
+                    <h1 className="lg:text-4xl md:text-left text-2xl text-center font-bold tracking-wider">Our goal is to make 3D animation accessible to everyone. </h1>
+                    <button className="sm:mt-9 mt-2 text-xl w-44 bg-yellow-500  hover:bg-yellow-600 text-white font-bold py-3 px-4 rounded text-left">Read More<i className="px-2 fas fa-long-arrow-alt-right"></i></button>
                 </div>
 
                 {/* <motion.img src={motu} alt="motu" initial={{ x: 100, y: -1 }} animate={{ x: 10, y: -5 }} transition={{ repeat: Infinity, duration: 50, repeatType: 'reverse' }} className="lg:h-[600px] lg:w-[600px] a-pulse p-0 md:mt-0 md:p-0 md:w-[300px] md:h-[300px] bg-gree hidden md:inline-flex" /> */}
-                <img src={motu} alt="motu" className="lg:h-[600px] lg:w-[600px] a-pulse p-0 md:mt-0 md:p-0 md:w-[320px] md:h-[350px] md:inline-flex bg-yellow-200 hidden " />
+                <img src={motu} alt="motu" className="lg:h-[600px] lg:w-[600px] a-pulse p-0 md:mt-0 md:p-0 md:w-[320px] md:h-[350px] md:inline-flex hidden " />
 
             </div>
         </div>,
