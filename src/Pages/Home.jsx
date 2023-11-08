@@ -1,28 +1,12 @@
 import React from "react";
 import MyCarousel from "../Components/Carousel/Carousel";
 import NavBar from "../Components/Navbar";
-import whitePaper from "../Images/whitePaper.png";
-import socialMedia from "../Images/socialMedia.png";
 import Services from "../Components/Services";
-import graphicDesign from "../Images/graphicDesign.png";
-import content from "../Images/content.png";
-import seo from "../Images/seo.png";
-import development from "../Images/development.png";
-import software from "../Images/Software.png";
-import animation from "../Images/animation.png";
-import digital from "../Images/digitalmarketing.png";
-import advertising from "../Images/advertising.png";
-import productions from "../Images/productions.png";
-import motivational from "../Images/motivational.png";
-import groundWork from "../Images/groundWork.png";
-import optimized from "../Images/optimized.png";
-import help from "../Images/help.png";
-import wave from "../Images/wave.png";
 import "../Index.css";
 
 const Home = () => {
   return (
-    <div className="max-w-[1500px] px-[5%]">
+    <div className="max-w-[1500px] px-2%">
       <NavBar />
       <MyCarousel />
       <div className="flex justify-center flex-col overflow-x-hidden">
@@ -40,84 +24,84 @@ const Home = () => {
 
         <div className="flex flex-wrap gap-3 justify-around mt-9 px-[5%]">
           <Services
-            img={whitePaper}
+            img="/whitePaper.png"
             h1={"White Paper Animations"}
             p={
               "We offer whitepaper designs that are great for businesses. Our designers use clean and beautiful formatting that is on-brand to engage with targeted audiences to provide in-depth information about industry."
             }
           />
           <Services
-            img={socialMedia}
+            img="/socialMedia.png"
             h1={"Social Media Marketing"}
             p={
               "We can help you create and manage social media profiles for your business and promote your products and services through social media channels by applying unique strategies."
             }
           />
           <Services
-            img={graphicDesign}
+            img="/graphicDesign.png"
             h1={"Creative Graphic Designs"}
             p={
               "We offer creative graphics services to help you create engaging visuals for your marketing materials. We can help you design and produce logos, illustrations, infographics, post designs and more."
             }
           />
           <Services
-            img={content}
+            img="/content.png"
             h1={"Effective Content Writing"}
             p={
               "We offer content writing services to help you create and share engaging content with your target audiences. We can help you write website content, blog posts, social media updates, and more."
             }
           />
           <Services
-            img={seo}
+            img="/seo.png"
             h1={"Search Engine Optimization (SEO)"}
             p={
               "We offer search engine optimization (SEO) services to help you improve your website's ranking on search engine results pages by improving your website's architecture to get the most of your SEO efforts."
             }
           />
           <Services
-            img={development}
+            img={"/development.png"}
             h1={"Website Development"}
             p={
               "We offer web development services to help you build a website that meets your needs. We can help you design and develop a website, create custom scripts and applications, and integrate third-party services."
             }
           />
           <Services
-            img={software}
+            img={"/Software.png"}
             h1={"Software Development"}
             p={
               "We offer software development services to help you create custom applications and scripts. We can assist you in developing and implementing a bespoke application, integrating third-party services, and generating custom scripts."
             }
           />
           <Services
-            img={animation}
+            img={"/animation.png"}
             h1={"2D Animations and 3D Animations"}
             p={
               "We offer professionally produced animation the latest tools to work on 3D videos, we have fully equipped technology for high-quality animations and producing characters for animations in a realistic style that looks like real human figures."
             }
           />
           <Services
-            img={digital}
+            img={"/marketing.png"}
             h1={"Advance Digital Marketing"}
             p={
               "We offer digital marketing services to help you promote your business online. We can help you create and execute an online advertising campaign, develop a social media strategy, and optimize your website for search engines."
             }
           />
           <Services
-            img='/advertising.png'
+            img="/advertising.png"
             h1={"Pay-Per-Click Advertising"}
             p={
               "We offer pay-per-click advertising and marketing services. This is a type of advertising that charges the advertiser by the number of clicks on either the advertisements or search results."
             }
           />
           <Services
-            img={productions}
+            img={"/productions.png"}
             h1={"Pre/Post Productions"}
             p={
               "We offer pre/post production services to help you produce high-quality video and audio content. We can help you script and storyboard your videos, record and edit audio, and create motion graphics."
             }
           />
           <Services
-            img={motivational}
+            img={"/motivational.png"}
             h1={"Motivational Videos"}
             p={
               "We offer all the services to achieve your video project planning goals and deadlines. No matter what kind of video you need for any purpose within your company, or for your customers, we'll help you to produce and edit it properly."
@@ -128,7 +112,10 @@ const Home = () => {
         <div className="sm:px-[1%]">
           <div className="mt-[100px] flex flex-col md:place-items-center lg:flex-row lg:justify-center ">
             <div className="px-[5%]">
-              <h3 className="text-2xl text-yellow-400 font-semibold">
+              <h3
+                className="text-2xl text-yellow-400 font-semibold"
+                id="aboutSection"
+              >
                 LIST OF WHAT WE DO
               </h3>
               <h1 className="mt-3  text-4xl text-gray-400 font-bold">
@@ -157,34 +144,33 @@ const Home = () => {
               </button>
             </div>
             <img
-              src={groundWork}
+              src={"/groundWork.png"}
               alt="groundWork"
               className="h-96 a-pulse md:w-[1000px]"
             />
           </div>
         </div>
 
-        <div className="mt-14 bg-red-200">
+        <div className="mt-14">
           <h1 className="text-5xl text-center text-yellow-400 font-bold ">
             Our Clients
           </h1>
           <p
             id="servicesSection"
-            className="text-center mt-4 text-xl font-semibold text-gray-500 bg-green-200"
+            className="text-center mt-4 text-xl font-semibold text-gray-500"
           >
             We offer our clients guaranteed results within the respective <br />{" "}
             timeline.
           </p>
 
-          <div className="lg:h-[300px] h-[100%] flex justify-center lg:flex-row flex-col lg:justify-around gap-8 bg-yellow-200">
-
+          <div className="lg:h-[300px] h-[100%] flex justify-center lg:flex-row flex-col lg:justify-around gap-8">
             <div className="cursor-move w-[420px] bgMeezan shadow-lg h-[300px] lg:h-auto"></div>
 
-            <div className="cursor-move w-[420px] bgtransFast shadow-lg h-[300px] lg:h-auto"> </div>
-
-            <div className="cursor-move bgxPress bg-cover w-[420px] shadow-lg h-[300px] lg:h-auto">
+            <div className="cursor-move w-[420px] bgtransFast shadow-lg h-[300px] lg:h-auto">
+              {" "}
             </div>
 
+            <div className="cursor-move bgxPress bg-cover w-[420px] shadow-lg h-[300px] lg:h-auto"></div>
           </div>
         </div>
 
@@ -196,7 +182,7 @@ const Home = () => {
 
         <div className="bgOptimize bg-no-repeat bg-contain mt-20 h-[800px] lg:flex lg:flex-row lg:justify-around lg:place-items-center sm:flex sm:flex-col sm:place-items-center flex flex-col justify-center place-items-center">
           <img
-            src={optimized}
+            src={"/optimized.png"}
             alt=""
             className="lg:h-[500px] lg:w-[600px] lg:px-14 lg:py-2 sm:w-[500px] "
           />
@@ -216,7 +202,7 @@ const Home = () => {
 
         <div className="flex flex-col mt-24 lg:justify-around lg:flex lg:flex-row place-items-center gap-12">
           <img
-            src={help}
+            src={"/help.png"}
             alt="help"
             className="lg:max-h-[350px] lg:w-[600px] min-w-[250px] "
           />
@@ -260,9 +246,54 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="mt-24">
-          <div className="wave bg-contain w-full h-[200%]"></div>
-          <div></div>
+        {/* <div className="wave bg-contain h-52 w-full"></div> */}
+        <div className="bg-[#8D8D8D] py-12 mt-20 px-[5%] ">
+          <div className="md:flex md:flex-row md:place-items-center md:justify-between flex flex-col gap-2 place-items-center h-[50%]">
+            <img
+              src="/immersivewhite.png"
+              alt=""
+              className="min-h-[150px] max-h-[200px] min-w-[150px] max-w-[200px]"
+            />
+            <div className="">
+              <h1 className="text-4xl font-semibold text-white text-left">
+                Newsletter SignUp!
+              </h1>
+              <div className="relative mt-24">
+                <input
+                  type="email"
+                  className="w-full p-4 border max-w-[800px] md:min-w-[560px] sm:min-w-[500px] min-w-[200px] border-gray-300 rounded focus:outline-none focus:border-yellow-600"
+                  placeholder="Your Email Address"
+                />
+                <button
+                  className="absolute right-0 focus:outline-none hover:cursor-pointer text-lg bg-yellow-400 hover:bg-yellow-500 text-white font-bold h-full md:px-20 rounded"
+                  type="button"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr className="mt-20 border-[#282F61]" />
+          <div className="mt-20 md:flex md:flex-row gap-14">
+            <div className="w-[45%]">
+              <h1 className="text-white text-3xl text-bold">About Us</h1>
+              <p>
+                We believe that animation can inspire people and change the
+                World. With Immersive Animator, you can bring your ideas to life
+                and share them with the World.
+              </p>
+              <div className="flex">
+                {/* <span className="border rounded-full"> */}
+                  <i className="fab fa-facebook rounded-full"></i>
+                {/* </span> */}
+                <i className="fab fa-instagram rounded-full"></i>
+                <i className="fab fa-linkedin"></i>
+              </div>
+            </div>
+            <div className="">
+              <h1 className="text-white text-3xl text-bold">Office Address</h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>

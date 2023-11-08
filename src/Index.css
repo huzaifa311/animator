@@ -1,10 +1,10 @@
 .bgOptimize {
-    background-image: url('../src/Images/bgOptimize.jpg');
+    background-image: url('../public/bgOptimize.jpg');
     background-size: cover;
 }
 
 .bgForm {
-    background-image: url('../src/Images/bgForm.jpg');
+    background-image: url('../public/bgForm.jpg');
     background-size: cover;
 }
 
@@ -17,21 +17,21 @@
 }
 
 .bgMeezan {
-    background-image: url('/src/Images/meezan.png');
+    background-image: url('../public/meezan.png');
     background-repeat: no-repeat;
     background-position: center;
     filter: grayscale(100%);
 }
 
 .bgtransFast {
-    background-image: url('/src/Images/transFast.png');
+    background-image: url('../public/transFast.png');
     background-repeat: no-repeat;
     background-position: center;
     filter: grayscale(100%);
 }
 
 .bgxPress {
-    background-image: url('/src/Images/xPress.png');
+    background-image: url('../public/xPress.png');
     background-repeat: no-repeat;
     padding: 0px;
     background-position: center;
@@ -46,6 +46,6 @@
 }
 
 .wave {
-    background-image: url('../src/Images/wave.png');
+    background-image: url('../public/wave.png');
     background-size: cover;
 }
