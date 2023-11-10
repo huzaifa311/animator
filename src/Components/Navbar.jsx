@@ -30,7 +30,7 @@ const NavBar = () => {
           }`}
         >
           <li className="md:ml-8 md:my-0 my-7 font-semibold md:mt-0 mt-[70px]">
-            <Link className={` hover:text-yellow-400 duration-500`}>HOME</Link>
+            <Link to={'/'} className={` hover:text-yellow-400 duration-500`}>HOME</Link>
           </li>
           <li className="md:ml-8 md:my-0 my-7 font-semibold cursor-pointer">
             <ScrollLink
@@ -63,7 +63,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="md:ml-8 md:my-0 my-7 font-semibold">
-            <Link className={` hover:text-yellow-400 duration-500 `}>BLOG</Link>
+            <Link to={'/blog'} className={` hover:text-yellow-400 duration-500 `}>BLOG</Link>
           </li>
           <li className="md:ml-8 md:my-0 my-7 font-semibold">
             <Link className={` hover:text-yellow-400 duration-500  `}>
@@ -74,7 +74,7 @@ const NavBar = () => {
         <div className="hidden lg:block">
           {" "}
           {/* Hide the button on screens smaller than md */}
-          <button className="text-lg bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded">
+          <button className="text-lg bg-yellow-400 hover:bg-yellow-800 text-white font-bold py-2 px-4 rounded">
             Call Us Now
           </button>
         </div>

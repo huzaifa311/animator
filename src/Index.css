@@ -1,51 +1,74 @@
 .bgOptimize {
-    background-image: url('../public/bgOptimize.jpg');
-    background-size: cover;
+  background-image: url("../public/bgOptimize.jpg");
+  background-size: cover;
 }
 
 .bgForm {
-    background-image: url('../public/bgForm.jpg');
-    background-size: cover;
+  background-image: url("../public/bgForm.jpg");
+  background-size: cover;
 }
 
 .placeholder::placeholder {
-    color: white;
+  color: white;
 }
 
 .placeholder {
-    border-bottom: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .bgMeezan {
-    background-image: url('../public/meezan.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: grayscale(100%);
+  background-image: url("../public/meezan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
 }
 
 .bgtransFast {
-    background-image: url('../public/transFast.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    filter: grayscale(100%);
+  background-image: url("../public/transFast.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
 }
 
 .bgxPress {
-    background-image: url('../public/xPress.png');
-    background-repeat: no-repeat;
-    padding: 0px;
-    background-position: center;
-    filter: grayscale(100%);
-    background-size: contain;
+  background-image: url("../public/xPress.png");
+  background-repeat: no-repeat;
+  padding: 0px;
+  background-position: center;
+  filter: grayscale(100%);
+  background-size: contain;
 }
 
 .bgMeezan:hover,
 .bgtransFast:hover,
 .bgxPress:hover {
-    filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .wave {
-    background-image: url('../public/wave.png');
-    background-size: cover;
+  background-image: url("../public/wave.png");
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #facc15;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #854d0e;
+}
+
+.bgGradient {
+  background: linear-gradient(to right, #5e5d5d, #a19f9f);
 }

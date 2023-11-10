@@ -76,7 +76,7 @@ const MyCarousel = () => {
                     <button className="sm:mt-9 mt-2 text-xl sm:w-44 w-[155px] bg-yellow-500  hover:bg-yellow-600 text-white font-bold py-3 sm:px-4 px-2 rounded">Read More<i className="px-2 fas fa-long-arrow-alt-right"></i></button>
                 </div>
 
-                <motion.img src={'/motu.png'} alt="motu" initial={{ x: 3, y: 50 }} animate={{ x: 10, y: -5 }} transition={{ repeat: Infinity, duration: 10, repeatType: 'reverse' }} className="lg:h-[400px] lg:w-[500px] a-pulse p-0 md:mt-0 md:p-0 md:w-[320px] md:h-[350px] md:inline-flex hidden" />
+                <motion.img src={'/motu.png'} alt="motu" initial={{ x: 10, y: 50 }} animate={{ x: 10, y: 5 }} transition={{ repeat: Infinity, duration: 4, repeatType: 'reverse' }} className="lg:h-[400px] lg:w-[500px] a-pulse p-0 md:mt-0 md:p-0 md:w-[320px] md:h-[350px] md:inline-flex hidden object-contain" />
                 {/* <img src={'/motu.png'} alt="motu" className="lg:h-[600px] lg:w-[600px] a-pulse p-0 md:mt-0 md:p-0 md:w-[320px] md:h-[350px] md:inline-flex hidden " /> */}
 
             </div>

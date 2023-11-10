@@ -1,15 +1,14 @@
 import React from "react";
 import MyCarousel from "../Components/Carousel/Carousel";
-import NavBar from "../Components/Navbar";
+import { motion } from "framer-motion";
 import Services from "../Components/Services";
 import "../Index.css";
 
 const Home = () => {
   return (
     <div className="max-w-[1500px] px-2%">
-      <NavBar />
       <MyCarousel />
-      <div className="flex justify-center flex-col overflow-x-hidden">
+      <div className="flex justify-center flex-col overflow-hidden">
         <h1 className="text-4xl text-center text-yellow-500 font-bold">
           Our Services
         </h1>
@@ -22,7 +21,7 @@ const Home = () => {
           <p>to the next level.</p>
         </p>
 
-        <div className="flex flex-wrap gap-3 justify-around mt-9 px-[5%]">
+        <div className="flex flex-wrap gap-3 justify-around mt-9 px-[4%]">
           <Services
             img="/whitePaper.png"
             h1={"White Paper Animations"}
@@ -109,9 +108,9 @@ const Home = () => {
           />
         </div>
 
-        <div className="sm:px-[1%]">
+        <div className="">
           <div className="mt-[100px] flex flex-col md:place-items-center lg:flex-row lg:justify-center ">
-            <div className="px-[5%]">
+            <div className="sm:px-[4%]">
               <h3
                 className="text-2xl text-yellow-400 font-semibold"
                 id="aboutSection"
@@ -143,36 +142,43 @@ const Home = () => {
                 <i className="px-2 pt-1 fas fa-long-arrow-alt-right"></i>
               </button>
             </div>
-            <img
+            <motion.img
               src={"/groundWork.png"}
               alt="groundWork"
+              initial={{ x: 3, y: 5 }}
+              animate={{ x: 10, y: -5 }}
+              transition={{
+                repeat: Infinity,
+                duration: 1,
+                repeatType: "reverse",
+              }}
               className="h-96 a-pulse md:w-[1000px]"
             />
           </div>
         </div>
 
-        <div className="mt-14">
-          <h1 className="text-5xl text-center text-yellow-400 font-bold ">
-            Our Clients
-          </h1>
-          <p
-            id="servicesSection"
-            className="text-center mt-4 text-xl font-semibold text-gray-500"
-          >
-            We offer our clients guaranteed results within the respective <br />{" "}
-            timeline.
-          </p>
+        {/* <div className="mt-14">
+            <h1 className="text-5xl text-center text-yellow-400 font-bold ">
+              Our Clients
+            </h1>
+            <p
+              id="servicesSection"
+              className="text-center mt-4 text-xl font-semibold text-gray-500"
+            >
+              We offer our clients guaranteed results within the respective{" "}
+              <br /> timeline.
+            </p>
 
-          <div className="lg:h-[300px] h-[100%] flex justify-center lg:flex-row flex-col lg:justify-around gap-8">
-            <div className="cursor-move w-[420px] bgMeezan shadow-lg h-[300px] lg:h-auto"></div>
+            <div className="lg:h-[200px] lg:w-[1000px] h-[100%] flex justify-center lg:flex-row flex-col lg:justify-around gap-8">
+              <div className="cursor-move w-[420px] bgMeezan shadow-lg h-[300px] lg:h-auto"></div>
 
-            <div className="cursor-move w-[420px] bgtransFast shadow-lg h-[300px] lg:h-auto">
-              {" "}
+              <div className="cursor-move w-[420px] bgtransFast shadow-lg h-[300px] lg:h-auto">
+                {" "}
+              </div>
+
+              <div className="cursor-move bgxPress bg-cover w-[420px] shadow-lg h-[300px] lg:h-auto"></div>
             </div>
-
-            <div className="cursor-move bgxPress bg-cover w-[420px] shadow-lg h-[300px] lg:h-auto"></div>
-          </div>
-        </div>
+          </div> */}
 
         {/* <div className='flex gap-32 mt-[80px] px-28 justify-between place-items-center h-[260px] ' >
           <img src={meezan} alt="meezan" className='filter grayscale hover:grayscale-0 h-20 cursor-move' />
@@ -181,7 +187,14 @@ const Home = () => {
         </div> */}
 
         <div className="bgOptimize bg-no-repeat bg-contain mt-20 h-[800px] lg:flex lg:flex-row lg:justify-around lg:place-items-center sm:flex sm:flex-col sm:place-items-center flex flex-col justify-center place-items-center">
-          <img
+          <motion.img
+            initial={{ x: 3, y: 5 }}
+            animate={{ x: 10, y: -5 }}
+            transition={{
+              repeat: Infinity,
+              duration: 1,
+              repeatType: "reverse",
+            }}
             src={"/optimized.png"}
             alt=""
             className="lg:h-[500px] lg:w-[600px] lg:px-14 lg:py-2 sm:w-[500px] "
@@ -201,7 +214,14 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col mt-24 lg:justify-around lg:flex lg:flex-row place-items-center gap-12">
-          <img
+          <motion.img
+            initial={{ x: 3, y: 5 }}
+            animate={{ x: 10, y: -5 }}
+            transition={{
+              repeat: Infinity,
+              duration: 1,
+              repeatType: "reverse",
+            }}
             src={"/help.png"}
             alt="help"
             className="lg:max-h-[350px] lg:w-[600px] min-w-[250px] "
@@ -247,54 +267,6 @@ const Home = () => {
         </div>
 
         {/* <div className="wave bg-contain h-52 w-full"></div> */}
-        <div className="bg-[#8D8D8D] py-12 mt-20 px-[5%] ">
-          <div className="md:flex md:flex-row md:place-items-center md:justify-between flex flex-col gap-2 place-items-center h-[50%]">
-            <img
-              src="/immersivewhite.png"
-              alt=""
-              className="min-h-[150px] max-h-[200px] min-w-[150px] max-w-[200px]"
-            />
-            <div className="">
-              <h1 className="text-4xl font-semibold text-white text-left">
-                Newsletter SignUp!
-              </h1>
-              <div className="relative mt-24">
-                <input
-                  type="email"
-                  className="w-full p-4 border max-w-[800px] md:min-w-[560px] sm:min-w-[500px] min-w-[200px] border-gray-300 rounded focus:outline-none focus:border-yellow-600"
-                  placeholder="Your Email Address"
-                />
-                <button
-                  className="absolute right-0 focus:outline-none hover:cursor-pointer text-lg bg-yellow-400 hover:bg-yellow-500 text-white font-bold h-full md:px-20 rounded"
-                  type="button"
-                >
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
-          <hr className="mt-20 border-[#282F61]" />
-          <div className="mt-20 md:flex md:flex-row gap-14">
-            <div className="w-[45%]">
-              <h1 className="text-white text-3xl text-bold">About Us</h1>
-              <p>
-                We believe that animation can inspire people and change the
-                World. With Immersive Animator, you can bring your ideas to life
-                and share them with the World.
-              </p>
-              <div className="flex">
-                {/* <span className="border rounded-full"> */}
-                  <i className="fab fa-facebook rounded-full"></i>
-                {/* </span> */}
-                <i className="fab fa-instagram rounded-full"></i>
-                <i className="fab fa-linkedin"></i>
-              </div>
-            </div>
-            <div className="">
-              <h1 className="text-white text-3xl text-bold">Office Address</h1>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
