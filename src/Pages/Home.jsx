@@ -3,23 +3,27 @@ import MyCarousel from "../Components/Carousel/Carousel";
 import { motion } from "framer-motion";
 import Services from "../Components/Services";
 import "../Index.css";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <div className="max-w-[1500px] px-2%">
+      <Helmet>
+        <title>Home Page-Immersive Animator</title>
+      </Helmet>
       <MyCarousel />
       <div className="flex justify-center flex-col overflow-hidden">
         <h1 className="text-4xl text-center text-yellow-500 font-bold">
           Our Services
         </h1>
-        <p
+        <div
           id="servicesSection"
           className="text-center mt-6 text-lg font-semibold text-gray-500"
         >
-          We are experts in digital marketing and have a team of{" "}
+          <p>We are experts in digital marketing and have a team of </p>
           <p>experienced professionals who can help you take your business</p>
           <p>to the next level.</p>
-        </p>
+        </div>
 
         <div className="flex flex-wrap gap-3 justify-around mt-9 px-[4%]">
           <Services
@@ -112,15 +116,15 @@ const Home = () => {
           <div className="mt-[100px] flex flex-col md:place-items-center lg:flex-row lg:justify-center ">
             <div className="sm:px-[4%]">
               <h3
-                className="text-2xl text-yellow-400 font-semibold"
+                className="text-lg text-yellow-400 font-semibold"
                 id="aboutSection"
               >
                 LIST OF WHAT WE DO
               </h3>
-              <h1 className="mt-3  text-4xl text-gray-400 font-bold">
+              <h1 className="mt-3  text-3xl text-gray-400 font-bold">
                 Groundwork For Business <br /> Development
               </h1>
-              <p className="mt-5 text-lg font-medium text-gray-500">
+              <p className="mt-5 text-sm font-medium text-gray-500">
                 Immersive Animator is a design studio that crafts, interfaces
                 and animates solutions for the present and future. Our processes
                 and opinions vary with the times, but our motto remains

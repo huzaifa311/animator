@@ -1,6 +1,7 @@
 import React from "react";
 import BlogCard from "../Components/BlogCard";
 import { Box, Grid } from "@mui/material";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   const blogObj = [
@@ -57,16 +58,19 @@ const Blog = () => {
     {
       img: "./traffic.jpg",
       h1: "Marketing Strategies Social Media For Increasing Traffic And Being No. 1",
-      p: 'The internet has a lot of potential Marketing Strategies Social Media to promote your business but it is still not easy to get noticed. The'
+      p: "The internet has a lot of potential Marketing Strategies Social Media to promote your business but it is still not easy to get noticed. The",
     },
     {
       img: "./no1.jpg",
       h1: "Be The No. 1 Website With Most Traffic",
-      p: 'Want to be the Website With Most Traffic? Have you ever wondered how some websites have more traffic than others even though they have the'
+      p: "Want to be the Website With Most Traffic? Have you ever wondered how some websites have more traffic than others even though they have the",
     },
   ];
   return (
     <div className="mt-32 max-w-[1500px] px-[5%]">
+      <Helmet>
+        <title>Blog Page-Immersive Animator</title>
+      </Helmet>
       <Box className="px-5 my-5">
         <Grid container columnSpacing={2} rowSpacing={2}>
           {blogObj.length &&

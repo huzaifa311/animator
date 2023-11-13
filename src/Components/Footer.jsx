@@ -63,14 +63,14 @@ const Footer = () => {
           <div className="md:w-[35%] w-full md:mt-0 mt-14">
             <h1 className="text-white text-3xl text-bold">Office Address</h1>
             <address className="mt-6 font-m">
-              <i class="fas fa-map-marker-alt"></i> ‎ M 03- 04 Plot no
+              <i className="fas fa-map-marker-alt"></i> ‎ M 03- 04 Plot no
               677,678-C. Block 2 PECHS C.C Area Tariq Road Karachi
             </address>
             <p className="mt-4">
-              <i class="fas fa-phone fa-flip-horizontal"></i>‎ ‎ +92 335 1111023
+              <i className="fas fa-phone fa-flip-horizontal"></i>‎ ‎ +92 335 1111023
             </p>
             <p className="mt-4">
-              <i class="far fa-envelope"></i>‎ hello@immersiveanimator.com
+              <i className="far fa-envelope"></i>‎ hello@immersiveanimator.com
             </p>
           </div>
         </div>

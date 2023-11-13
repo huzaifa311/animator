@@ -1,10 +1,10 @@
 .bgOptimize {
-  background-image: url("../public/bgOptimize.jpg");
+  background-image: url("/bgOptimize.jpg");
   background-size: cover;
 }
 
 .bgForm {
-  background-image: url("../public/bgForm.jpg");
+  background-image: url("/bgForm.jpg");
   background-size: cover;
 }
 
@@ -17,21 +17,21 @@
 }
 
 .bgMeezan {
-  background-image: url("../public/meezan.png");
+  background-image: url("/meezan.png");
   background-repeat: no-repeat;
   background-position: center;
   filter: grayscale(100%);
 }
 
 .bgtransFast {
-  background-image: url("../public/transFast.png");
+  background-image: url("/transFast.png");
   background-repeat: no-repeat;
   background-position: center;
   filter: grayscale(100%);
 }
 
 .bgxPress {
-  background-image: url("../public/xPress.png");
+  background-image: url("/xPress.png");
   background-repeat: no-repeat;
   padding: 0px;
   background-position: center;
@@ -46,12 +46,12 @@
 }
 
 .wave {
-  background-image: url("../public/wave.png");
+  background-image: url("/wave.png");
   background-size: cover;
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
@@ -61,12 +61,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #facc15;
+  background: #F4D007;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #854d0e;
+  background: rgb(160, 160, 1);
 }
 
 .bgGradient {

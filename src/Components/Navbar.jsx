@@ -7,9 +7,9 @@ const NavBar = () => {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-2xl w-full fixed top-0 left-0 z-[100] ">
+    <div className="shadow-lg w-full fixed top-0 left-0 z-[100] border border-b border-gray-400">
       <div
-        className={`md:flex items-center justify-between bg-white py-4 md:px-16 px-7`}
+        className={`md:flex items-center justify-between bg-white py-1 md:px-16 px-7`}
       >
         <div className="font-semibold text-2xl cursor-pointer flex items-center gap-1">
           <img
