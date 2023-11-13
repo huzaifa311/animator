@@ -1,7 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
-const Carousel = ({ images, texts }) => {
+/* const Carousel = ({ images, texts }) => {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   const handlePrev = () => {
@@ -49,21 +52,22 @@ const Carousel = ({ images, texts }) => {
         </div>
       </div>
       <div className="mt-4">
-        {/* {images.map((image, index) => (
-                    <button
-                        key={index}
-                        type="button"
-                        className={`rounded-full h-6 w-6 bg-black ${activeIndex === index ? "bg-black" : ""
-                            }`}
-                        onClick={() => setActiveIndex(index)}
-                    ></button>
-                ))} */}
       </div>
     </div>
   );
 };
 
 const MyCarousel = () => {
+  var settings = {
+    autoplay: true,
+    autoplaySpeed: 1000,
+    dots: false,
+    infinite: false,
+    speed: 1000,
+    fade: true,
+    slide: "div",
+    cssEase: "linear",
+  };
   const images = ["/bgIndex1.jpg", "/bgIndex.jpg"];
   const texts = [
     <div className="w-full">
@@ -81,17 +85,16 @@ const MyCarousel = () => {
         <motion.img
           src={"/motu.png"}
           alt="motu"
-          initial={{ x: 3, y: 50 }}
-          animate={{ x: 10, y: -5 }}
+          initial={{ x: 5, y: 10 }}
+          animate={{ x: -5, y: -10 }}
           transition={{ repeat: Infinity, duration: 1, repeatType: "reverse" }}
           className="hidden md:inline-flex lg:w-[400px]"
         />
-        {/* <img src={'/motu.png'} alt="motu" className="lg:h-[600px] lg:w-[600px] a-pulse p-0 md:mt-0 md:p-0 md:w-[320px] md:h-[350px] md:inline-flex hidden " /> */}
       </div>
     </div>,
-    <div className="w-full">
-      <div className="flex lg:justify-around md:justify-between justify-center place-items-center h-[300px] sm:h-[390px] md:h-[500px] px-0 md:px-10">
-        <div className="flex flex-col md:w-[100%] lg:w-[55%] md:place-items-start place-items-center sm:w-[70%] w-full text-center md:text-left font-bold">
+    <div className="w-full py-4">
+      <div className="flex justify-around">
+        <div className="lg:mt-[150px] mt-[18px] text-center flex flex-col justify-center place-items-center">
           <h1 className="lg:text-5xl text-4xl font-bold hidden md:inline-flex">
             Immersive Digital World
           </h1>
@@ -99,14 +102,14 @@ const MyCarousel = () => {
             Immersive Animator is a design studio that codes, creates, and
             invents solutions for the present and future.
           </p>
-          <button className="bg-yellow-500 w-32 py-2 mt-5 hover:bg-yellow-600 rounded flex justify-around place-items-center">
+          <button className="sm:mt-9 mt-2 text-xl sm:w-44 w-[155px] bg-yellow-500  hover:bg-yellow-600 text-white font-bold py-3 sm:px-4 px-2 rounded">
             Read More<i className="px-2 fas fa-long-arrow-alt-right"></i>
           </button>
         </div>
         <motion.img
           src={"/digitalmarketing.png"}
-          initial={{ x: 3, y: 50 }}
-          animate={{ x: 10, y: -5 }}
+          initial={{ x: 5, y: 10 }}
+          animate={{ x: -5, y: -10 }}
           transition={{ repeat: Infinity, duration: 1, repeatType: "reverse" }}
           alt=""
           className="lg:h-[400px] lg:w-[500px] a-pulse p-0 md:mt-0 md:p-0 md:w-[320px] md:h-[350px] md:inline-flex hidden"
@@ -117,9 +120,28 @@ const MyCarousel = () => {
 
   return (
     <div className="mt-[80px]">
-      <Carousel images={images} texts={texts} />
+      <Carousel {...settings} images={images} texts={texts}  />
     </div>
   );
-};
+}; */
 
+const MyCarousel = () => {
+  var settings = {
+    autoplay: true,
+    autoplaySpeed: 1000,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+  return (
+    <Slider {...settings} className="mt-[90px] px-[5%] bg-blue-300 h-[300px] sm:h-[390px] md:h-[500px] w-full">
+      <div className="h-[300px] sm:h-[390px] md:h-[500px] w-full">
+        <h3 className="text-black bgIndex1">1</h3>
+      </div>
+      <div className="h-[300px] sm:h-[390px] md:h-[500px] w-full bgIndex">
+        <h3>2</h3>
+      </div>
+    </Slider>
+  );
+};
 export default MyCarousel;

@@ -149,8 +149,8 @@ const Home = () => {
             <motion.img
               src={"/groundWork.png"}
               alt="groundWork"
-              initial={{ x: 3, y: 5 }}
-              animate={{ x: 10, y: -5 }}
+              initial={{ x: 5, y: 10 }}
+              animate={{ x: -5, y: -10 }}
               transition={{
                 repeat: Infinity,
                 duration: 1,
@@ -192,8 +192,8 @@ const Home = () => {
 
         <div className="bgOptimize bg-no-repeat bg-contain mt-20 h-[800px] lg:flex lg:flex-row lg:justify-around lg:place-items-center sm:flex sm:flex-col sm:place-items-center flex flex-col justify-center place-items-center">
           <motion.img
-            initial={{ x: 3, y: 5 }}
-            animate={{ x: 10, y: -5 }}
+            initial={{ x:  5, y: 10 }}
+            animate={{ x: -5, y: -10 }}
             transition={{
               repeat: Infinity,
               duration: 1,
@@ -219,8 +219,8 @@ const Home = () => {
 
         <div className="flex flex-col mt-24 lg:justify-around lg:flex lg:flex-row place-items-center gap-12">
           <motion.img
-            initial={{ x: 3, y: 5 }}
-            animate={{ x: 10, y: -5 }}
+            initial={{ x:  5, y: 10 }}
+            animate={{ x: -5, y: -10 }}
             transition={{
               repeat: Infinity,
               duration: 1,
