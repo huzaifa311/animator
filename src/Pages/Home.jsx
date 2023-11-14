@@ -12,7 +12,7 @@ const Home = () => {
         <title>Home Page-Immersive Animator</title>
       </Helmet>
       <MyCarousel />
-      <div className="flex justify-center flex-col overflow-hidden">
+      <div className="flex justify-center flex-col overflow-hidden mt-2">
         <h1 className="text-4xl text-center text-yellow-500 font-bold">
           Our Services
         </h1>
@@ -161,19 +161,18 @@ const Home = () => {
           </div>
         </div>
 
-        {/* <div className="mt-14">
-            <h1 className="text-5xl text-center text-yellow-400 font-bold ">
-              Our Clients
-            </h1>
-            <p
-              id="servicesSection"
-              className="text-center mt-4 text-xl font-semibold text-gray-500"
-            >
-              We offer our clients guaranteed results within the respective{" "}
-              <br /> timeline.
-            </p>
+        <div className="mt-14">
+          <h1 className="text-5xl text-center text-yellow-400 font-bold ">
+            Our Clients
+          </h1>
+          <p className="text-center mt-4 text-xl font-semibold text-gray-500">
+            We offer our clients guaranteed results within the respective <br />
+            timeline.
+          </p>
+          
+        </div>
 
-            <div className="lg:h-[200px] lg:w-[1000px] h-[100%] flex justify-center lg:flex-row flex-col lg:justify-around gap-8">
+        {/* <div className="lg:h-[200px] lg:w-[1000px] h-[100%] flex justify-center lg:flex-row flex-col lg:justify-around gap-8">
               <div className="cursor-move w-[420px] bgMeezan shadow-lg h-[300px] lg:h-auto"></div>
 
               <div className="cursor-move w-[420px] bgtransFast shadow-lg h-[300px] lg:h-auto">
@@ -182,9 +181,9 @@ const Home = () => {
 
               <div className="cursor-move bgxPress bg-cover w-[420px] shadow-lg h-[300px] lg:h-auto"></div>
             </div>
-          </div> */}
+          </div>
 
-        {/* <div className='flex gap-32 mt-[80px] px-28 justify-between place-items-center h-[260px] ' >
+        <div className='flex gap-32 mt-[80px] px-28 justify-between place-items-center h-[260px] ' >
           <img src={meezan} alt="meezan" className='filter grayscale hover:grayscale-0 h-20 cursor-move' />
           <img src={transFast} alt="transFast" className='filter grayscale hover:grayscale-0 cursor-move' />
           <img src={xPress} alt="xPress" className='filter grayscale hover:grayscale-0 h-64 cursor-move' />
@@ -192,7 +191,7 @@ const Home = () => {
 
         <div className="bgOptimize bg-no-repeat bg-contain mt-20 h-[800px] lg:flex lg:flex-row lg:justify-around lg:place-items-center sm:flex sm:flex-col sm:place-items-center flex flex-col justify-center place-items-center">
           <motion.img
-            initial={{ x:  5, y: 10 }}
+            initial={{ x: 5, y: 10 }}
             animate={{ x: -5, y: -10 }}
             transition={{
               repeat: Infinity,
@@ -219,7 +218,7 @@ const Home = () => {
 
         <div className="flex flex-col mt-24 lg:justify-around lg:flex lg:flex-row place-items-center gap-12">
           <motion.img
-            initial={{ x:  5, y: 10 }}
+            initial={{ x: 5, y: 10 }}
             animate={{ x: -5, y: -10 }}
             transition={{
               repeat: Infinity,

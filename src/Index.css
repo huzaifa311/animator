@@ -51,7 +51,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 
 /* Track */
@@ -61,18 +61,14 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #F4D007;
+  background: yellow;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(160, 160, 1);
+  background: #F4D007
 }
 
 .bgGradient {
   background: linear-gradient(to right, #5e5d5d, #a19f9f);
-}
-
-.bgIndex{
-  
 }

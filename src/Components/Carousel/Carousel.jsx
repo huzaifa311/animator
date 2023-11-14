@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import "../../Index.css";
 
-/* const Carousel = ({ images, texts }) => {
+const Carousel = ({ images, texts }) => {
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   const handlePrev = () => {
@@ -123,25 +124,63 @@ const MyCarousel = () => {
       <Carousel {...settings} images={images} texts={texts}  />
     </div>
   );
-}; */
+};
 
-const MyCarousel = () => {
+export default MyCarousel
+
+
+
+
+
+
+
+
+
+
+/* const MyCarousel = () => {
   var settings = {
-    autoplay: true,
-    autoplaySpeed: 1000,
-    speed: 1000,
+    // autoplay: true,
+    // autoplaySpeed: 5000,
+    speed: 10,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
   return (
-    <Slider {...settings} className="mt-[90px] px-[5%] bg-blue-300 h-[300px] sm:h-[390px] md:h-[500px] w-full">
-      <div className="h-[300px] sm:h-[390px] md:h-[500px] w-full">
-        <h3 className="text-black bgIndex1">1</h3>
+    <Slider
+      {...settings}
+      className="mt-[90px] h-[300px] sm:h-[390px] md:h-[560px] w-full"
+    >
+      <div className="w-full bgIndex1 px-[5%] ">
+        <div className="flex h-[300px] sm:h-[390px] md:h-[560px] px-0 md:justify-between md:place-items-center bg-green-600 pr-5">
+          <div className="lg:w-[700px] w-full flex justify-center place-items-center px-[5%] bg-orange-500">
+            <h1 className="md:text-[45px] md:leading-[60px] text-3xl text-white">
+              Our goal is to make 3D animation accessible to everyone.{" "}
+            </h1>
+            <button className="bg-yellow-500 w-40 px-4 py-3 mt-5 hover:bg-yellow-600 rounded flex justify-around place-items-center text-white text-lg">
+              Read More
+              <i className="fas fa-long-arrow-alt-right"></i>
+            </button>
+          </div>
+
+          <motion.img
+            src={"/motu.png"}
+            alt="motu"
+            initial={{ x: 5, y: 10 }}
+            animate={{ x: -5, y: -10 }}
+            transition={{
+              repeat: Infinity,
+              duration: 1,
+              repeatType: "reverse",
+            }}
+            className="w-0 md:w-auto bg-red-50 "
+          />
+        </div>
       </div>
-      <div className="h-[300px] sm:h-[390px] md:h-[500px] w-full bgIndex">
-        <h3>2</h3>
+
+      <div className="h-[300px] sm:h-[390px] md:h-[560px] w-full bgIndex bg-contain object-contain">
+        <h3 className="text-black ">2</h3>
       </div>
     </Slider>
   );
 };
-export default MyCarousel;
+export default MyCarousel; */

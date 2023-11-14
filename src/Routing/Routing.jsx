@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../Pages/Home'
-import Career from '../Pages/Blog'
 import Blog from '../Pages/Blog'
 
 const Routing = () => {
